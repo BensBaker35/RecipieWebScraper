@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using RecipieWebScraper.containers;
@@ -18,11 +19,18 @@ namespace RecipieWebScraper.collectors
             this.directionPath = directionPath;
         }
 
+        static string GetDomainSubString(string allowedDomain, string inputDomain)
+        {
+            return inputDomain.Substring(inputDomain.IndexOf(".")+ 1, allowedDomain.Length);
+        }
+
         public bool AllowedURL( string inputDomain)
         {
             foreach(string str in allowedDomains)
             {
-                if(str.Equals(inputDomain))
+                var input_cmp = GetDomainSubString(str, inputDomain);
+                Console.WriteLine(input_cmp);
+                if(str.Equals(input_cmp))
                 {
                     return true;
                 }
@@ -44,7 +52,16 @@ namespace RecipieWebScraper.collectors
         }
         List<DirectionNode> GetDirections(HtmlNode documentNode)
         {
-            return null;
+            var nodes = documentNode.SelectNodes(directionPath);
+            var directions = new List<DirectionNode>();
+            foreach(var node in nodes)
+            {
+                var direction = new DirectionNode();
+                direction.directions = node.InnerText;
+                directions.Add(direction);
+            }
+
+            return directions;
         }
 
         public RecipieNode GetRecipieFromWebsite(string url)

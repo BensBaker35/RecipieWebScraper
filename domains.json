@@ -1,0 +1,15 @@
+{
+    "domain_sets": 
+    [
+        {
+            "allowed_domains": ["bonappetit.com/recipe/"],
+            "ingredient_path": "//div[@class='ingredients__text']",
+            "direction_path": "//li[@class='step']"
+        },
+        {
+            "allowed_domains": ["delish.com/cooking/recipe-ideas"],
+            "ingredient_path": "//div[@class='ingredient-item']",
+            "direction_path": "//div[@class='direction-lists']/li"
+        }
+    ]
+}
