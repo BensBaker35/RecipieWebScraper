@@ -4,9 +4,16 @@ using RecipieWebScraper.containers;
 
 namespace RecipieWebScraper
 {
+    /// <summary>
+    /// The main entry point for the console version of recipie web scraper
+    /// </summary>
     class Program
     {
 
+        /// <summary>
+        /// The main function
+        /// </summary>
+        /// <param name="args">Command line arguments</param>
         static void Main(string[] args)
         {
             //var url = "https://www.delish.com/cooking/recipe-ideas/a25137966/pan-fried-tilapia-recipe/";
@@ -32,7 +39,10 @@ namespace RecipieWebScraper
             PrintInstructionLIst(recipieData);
         }
 
-
+        /// <summary>
+        /// Prints recipie ingredients to stdout
+        /// </summary>
+        /// <param name="recipieNode">The information container for given recipie</param>
         static void PrintIngredientList(RecipieNode recipieNode)
         {
             Console.WriteLine("Ingredient List");
@@ -47,6 +57,10 @@ namespace RecipieWebScraper
             Console.WriteLine("---------------------------");
         }
 
+        /// <summary>
+        /// Prints recipie instructions to stdout
+        /// </summary>
+        /// <param name="recipieNode">The information container for given recipie</param>
         static void PrintInstructionLIst(RecipieNode recipieNode)
         {
             Console.WriteLine("Instruction List");
