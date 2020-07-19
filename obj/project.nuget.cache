@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "nHBZRfyLQTyQFC4vexdq+8r2+nWjR2zFvJJJ0zMNb7erosmwSmPF3xeVYukKOCNVOlsiyx9y1QX+RfNM8e+nCw==",
+  "dgSpecHash": "VWgpLDmKHSy7ZNHNut38hm4NqJlWMru8+VOB0g2C7HY3crdleRzL2CG/wjyf26tyxM2vdplItUEY4csWMBb6bw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ben\\Documents\\Programming\\RecipieWebScraper\\RecipieWebScraper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ben\\.nuget\\packages\\htmlagilitypack\\1.11.23\\htmlagilitypack.1.11.23.nupkg.sha512",
     "C:\\Users\\Ben\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Ben\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\Ben\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Ben\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Ben\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Ben\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
